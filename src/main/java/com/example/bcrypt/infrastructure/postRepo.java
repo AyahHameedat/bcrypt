@@ -6,6 +6,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface postRepo extends JpaRepository<postModel,Long> {
 
-//    postModel findByUserTextContent(String textContent);
-
 }

@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-
 <h1>You are in the home page, Hello!!</h1>
+
+<div th:each="post: ${PostList}" class="table-row">
+    <div th:text = "${post.textContent}"></div>
+</div>
+
+<a href="/signUp">Register</a>
+<a href="/loginSecret">Log In</a>
+
+
 
 </body>
 </html>

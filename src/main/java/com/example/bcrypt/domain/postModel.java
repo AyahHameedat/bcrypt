@@ -24,6 +24,22 @@ public class postModel {
         return id;
     }
 
+    public void setUsermodel(userModel usermodel) {
+        this.usermodel = usermodel;
+    }
+
+    public void setTextContent(@NonNull String textContent) {
+        this.textContent = textContent;
+    }
+
+    @NonNull
+    public String getTextContent() {
+        return textContent;
+    }
+
+    public postModel() {
+    }
+
     @ManyToOne
     userModel usermodel;
 

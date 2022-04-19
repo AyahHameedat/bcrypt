@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href= "/css/login.css">
+
 </head>
 <body>
-<h1>You are in the home page, Hello!!</h1>
 
-<div th:each="post: ${PostList}" class="table-row">
-    <div th:text = "${post.textContent}"></div>
+<div class="login-box">
+    <div th:each="post: ${PostList}" class="table-row">
+        <div th:text = "${post.textContent}" style="color: white;">
+        </div>
+    </div>
 </div>
 
 <a href="/signUp">Register</a>

@@ -1,24 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Sign Up</title>
+    <title>Login</title>
+    <link rel="stylesheet" href= "/css/login.css">
+
 </head>
 <body>
 
-<form action="/signUp" method="POST">
-  <label for="username">Username</label>
-  <input type="text" name="username">
+<div class="login-box">
+    <h2> Login </h2>
 
-  <label for="password">Password</label>
-  <input type="password" name="password">
+    <form action="/signUp" method="POST">
 
-  <input type="submit" value="Sign Up">
+        <div class="user-box">
+            <input type="text" name="username">
+            <label for="username">UserName</label>
+        </div>
+
+        <div class="user-box">
+            <input type="password" name="password">
+            <label for="password">Password</label>
+            <!--        <input type="checkbox" onclick="myFunction()">Show Password-->
+        </div>
+
+        <button type="submit" class="registerbtn"> Register </button>
 
 
-</form>
+        <br>
+        <br>
+        <div class="user-box">
+            <label color="#ffffff">If you have an account, please login!</label>
+        </div>
+        <br>
+        <br>
+            <a href="/loginSecret">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+                Log In
+            </a>
 
-<a href="/loginSecret">Log In</a>
 
+    </form>
+</div>
 </body>
 </html>
